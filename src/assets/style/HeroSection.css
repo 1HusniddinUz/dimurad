@@ -1,0 +1,198 @@
+:root{
+  --nav-h: 76px;
+  --ink:#0B0B0C;
+  --ivory:#F7F3EE;
+  --stone:#D8D1C7;
+  --gold:#B08D57;
+
+  --container: 1180px;
+  --tr: 260ms ease;
+}
+
+/* HERO BASE */
+.heroA{
+  padding-top: var(--nav-h);
+  min-height: calc(100vh - var(--nav-h));
+  background: var(--ivory);
+  color: var(--ink);
+}
+
+/* GRID */
+.heroA__container{
+  width: min(var(--container), 88%);
+  margin: 0 auto;
+  min-height: calc(100vh - var(--nav-h));
+  display: grid;
+  grid-template-columns: 1.05fr 1.35fr;
+  gap: clamp(18px, 3vw, 44px);
+  align-items: center;
+  padding: clamp(24px, 4vw, 56px) 0;
+}
+
+/* LEFT */
+.heroA__kicker{
+  margin: 0 0 16px;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  font-size: .82rem;
+  opacity: .9;
+}
+
+.heroA__title{
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: clamp(2.6rem, 5vw, 4.7rem);
+  line-height: 1.02;
+  letter-spacing: .01em;
+}
+
+.heroA__titleBreak{
+  display: inline;
+  opacity: .95;
+}
+
+.heroA__sub{
+  margin: 18px 0 0;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.02rem;
+  line-height: 1.75;
+  max-width: 52ch;
+  opacity: .9;
+}
+
+.heroA__actions{
+  display: flex;
+  gap: 12px;
+  margin-top: 26px;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS (real atelier buttons = thin, rectangular, not “app-like pills”) */
+.btnA{
+  height: 46px;
+  padding: 0 18px;
+  border-radius: 0px;
+  text-decoration: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  font-size: .82rem;
+
+  transition: transform var(--tr), background var(--tr), color var(--tr), border-color var(--tr);
+  will-change: transform;
+}
+
+.btnA--primary{
+  background: var(--ink);
+  color: var(--ivory);
+  border: 1px solid var(--ink);
+}
+.btnA--primary:hover{ transform: translateY(-1px); }
+
+.btnA--ghost{
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid rgba(11,11,12,.25);
+}
+.btnA--ghost:hover{
+  transform: translateY(-1px);
+  border-color: rgba(11,11,12,.45);
+}
+
+.heroA__note{
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: .10em;
+  text-transform: uppercase;
+  font-size: .72rem;
+  opacity: .75;
+}
+
+.heroA__dot{
+  width: 6px;
+  height: 6px;
+  background: var(--gold);
+  border-radius: 999px;
+}
+
+/* RIGHT (image frame + reveal animation) */
+.heroA__right{
+  position: relative;
+}
+
+.heroA__frame{
+  position: relative;
+  border: 1px solid rgba(11,11,12,.14);
+  background: #fff;
+  padding: clamp(10px, 1.3vw, 16px);
+}
+
+.heroA__img{
+  display: block;
+  width: 100%;
+  height: clamp(420px, 62vh, 760px);
+  object-fit: cover;
+}
+
+/* image reveal (luxury “editorial” touch) */
+.heroA__reveal{
+  position: absolute;
+  inset: clamp(10px, 1.3vw, 16px);
+  background: var(--ivory);
+  transform: scaleX(1);
+  transform-origin: left;
+  animation: reveal 720ms ease forwards;
+}
+@keyframes reveal{
+  to { transform: scaleX(0); }
+}
+
+/* stamp */
+.heroA__stamp{
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid rgba(11,11,12,.18);
+  background: rgba(247,243,238,.85);
+  padding: 10px 12px;
+  display: grid;
+  gap: 2px;
+  text-align: center;
+
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  font-size: .70rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 980px){
+  .heroA__container{
+    grid-template-columns: 1fr;
+  }
+  .heroA__img{
+    height: 56vh;
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .heroA__reveal{ animation: none; transform: scaleX(0); }
+  .btnA{ transition: none; }
+}

@@ -1,0 +1,53 @@
+:root{
+  --ivory:#F7F3EE;
+  --ink:#0B0B0C;
+  --muted: rgba(11,11,12,.55);
+  --container: 1180px;
+}
+
+.pi{
+  background: var(--ivory);
+  padding: 40px 0 36px;
+}
+
+.pi__container{
+  width: min(var(--container), 88%);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pi__title{
+  margin: 0;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  font-weight: 300;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  letter-spacing: .02em;
+  color: rgba(11,11,12,.65); /* rasmga o'xshash yumshoq */
+}
+
+.pi__socials{
+  margin-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.pi__social{
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  color: rgba(11,11,12,.35);
+  text-decoration: none;
+  transition: color 220ms ease, transform 220ms ease;
+}
+
+.pi__social:hover{
+  color: rgba(11,11,12,.65);
+  transform: translateY(-1px);
+}
+
+.pi__icon{
+  width: 16px;
+  height: 16px;
+}
