@@ -21,7 +21,7 @@ const Navbar = () => {
         doc.scrollTop || window.pageYOffset || document.body.scrollTop || 0;
       const maxScrollTop = doc.scrollHeight - window.innerHeight;
       const progress = maxScrollTop > 0 ? scrollTop / maxScrollTop : 0;
-      setScrolled(progress >= 0.7);
+      setScrolled(progress >= 0.1);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });

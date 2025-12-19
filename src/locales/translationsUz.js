@@ -150,52 +150,53 @@ const translationsUz = {
     "Yirik buyurtmalar, korporativ forma liboslari yoki alohida kollaboratsiya bo‘yicha takliflar uchun bevosita /contacts sahifasi orqali murojaat qilishingiz mumkin.",
 
   // =====================
-  // Products page
+  // Products page (DI-MURAD: Milliy + Zamonaviy Fusion)
   // =====================
   products_eyebrow: "DI-MURAD kolleksiyasi",
-  products_title: "Kapsula kolleksiya va bespoke obrazlar",
+  products_title: "Milliy meros + zamonaviy siluetlar",
   products_subtitle:
-    "Kelin sarpolari, milliy liboslar va zamonaviy kapsula kolleksiyalar bir joyda. Har bir model alohida o‘lchov, mato va marosim ssenariysiga moslab yaratiladi.",
+    "An’anaviy naqsh va kashtalar zamonaviy kesim, sokin palitra va qulay siluetlar bilan uyg‘unlashadi. Har bir model o‘lchov, mato va uslubingizga moslab ishlab chiqiladi.",
 
   products_filter_all: "Barchasi",
-  products_filter_bridal: "Kelinlik",
+  products_filter_bridal: "Kelin sarposi",
   products_filter_national: "Milliy",
   products_filter_modern: "Zamonaviy",
   products_filter_classic: "Klassik",
   products_filter_evening: "Kechki",
+
   product_tag_bridal: "KELIN SARPOSI",
   product_tag_limited: "CHEKLANGAN",
   product_tag_national: "MILLIY",
-  product_tag_handmade: "HANDMADE",
+  product_tag_handmade: "QO‘L ISHI",
   product_tag_city_capsule: "CITY CAPSULE",
   product_tag_evening: "EVENING",
 
-  products_item1_name: "Milliy Brown To‘plam",
+  // 6 ta sample item (minimal + elegant)
+  products_item1_name: "Atlas Fusion Ko‘ylak",
   products_item1_desc:
-    "Tabiiy matodan tikilgan, milliy nafis detallar bilan boyitilgan, kundalik va marosimga mos obraz.",
+    "Atlas teksturasi va minimalist kesim uyg‘unligi. Milliy ruhni zamonaviy, toza siluetda beradigan obraz.",
 
-  products_item2_name: "Charm Bomber Libosi",
+  products_item2_name: "Chopon Jaket",
   products_item2_desc:
-    "Zamonaviy charm bomber va silliq qora siluetdan iborat shahar uslubidagi obraz.",
+    "Chopon an’anasi — jaket formatida. Qattiq emas, yengil struktura: kundalik va tadbirlar uchun universal.",
 
-  products_item3_name: "Shaharcha Charm Obraz",
+  products_item3_name: "City Capsule Set",
   products_item3_desc:
-    "Yumshoq charm jaket bilan kundalik hayotga moslangan minimalistik shahar uslubi.",
+    "Sokin ranglar, minimal detallar va qulay siluet. Shahar ritmiga mos, lekin milliy karakteri bor kapsula set.",
 
-  products_item4_name: "Minimal Uzun Ko‘ylak",
+  products_item4_name: "Evening Black Siluet",
   products_item4_desc:
-    "Uzun qora siluet, soddalik va nafislikni uyg‘unlashtirgan zamonaviy ko‘ylak.",
+    "Kechki tadbirlar uchun chuqur qora rang va nafis proporsiya. Minimal, ammo juda “premium” kayfiyat.",
 
-  products_item5_name: "Elegant Minimal Obraz",
+  products_item5_name: "Kashta Accent Look",
   products_item5_desc:
-    "Keng yengli minimal qora siluet. Ish va kundalik hayotda nafis ko‘rinish uchun yaratilgan.",
+    "Toza zamonaviy shakl + kashtaning nozik aksenti. Milliy detal ko‘zga urilmaydi, lekin image’ni boyitadi.",
 
-  products_item6_name: "Tungi Black To‘plam",
+  products_item6_name: "Bridal Minimal Sarpo",
   products_item6_desc:
-    "Tungi marosimlar va tantanalar uchun mo‘ljallangan, silliq va chuqur qora rangdagi obraz.",
+    "Kelin sarposi uchun yengil va nafis yechim. Matoning tushishi, uzunlik va bezaklar balansda — ortiqcha shovqinsiz.",
 
   products_item6_price_label: "So‘rov asosida",
-
   products_button_details: "Batafsil",
 
   // =====================

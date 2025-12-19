@@ -2,7 +2,7 @@ import "../../assets/style/PageIntro.css";
 import { CiInstagram } from "react-icons/ci";
 import { RiTelegram2Fill } from "react-icons/ri";
 
-export default function PageIntro({ title = "Welcome" }) {
+export default function PageIntro({ title = "Social Links" }) {
   return (
     <section className="pi" aria-label="Page intro">
       <div className="pi__container">

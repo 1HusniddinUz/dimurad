@@ -4,7 +4,7 @@
   --muted: rgba(11,11,12,.60);
   --line: rgba(11,11,12,.14);
   --shadow: 0 10px 30px rgba(0,0,0,.06);
-  --container: 1180px;
+  --container: 1440px;
   --tr: 240ms ease;
 }
 
@@ -169,6 +169,35 @@
   background: rgba(255,255,255,.8);
   border-color: rgba(11,11,12,.28);
   color: rgba(11,11,12,.8);
+}
+/* MAP */
+.ct__mapSection{
+  width: 100%;
+  margin-top: 26px;
+  padding-bottom: 70px;
+}
+
+.ct__mapWrap{
+  width: min(1180px, 88%);
+  margin: 0 auto;
+  border: 1px solid rgba(11,11,12,.14);
+  background: rgba(255,255,255,.55);
+  box-shadow: 0 10px 30px rgba(0,0,0,.06);
+  padding: 12px;
+}
+
+.ct__map{
+  width: 100%;
+  height: 480px;
+  border: 0;
+  display: block;
+}
+
+/* Mobile tuning */
+@media (max-width: 520px){
+  .ct__map{
+    height: 340px;
+  }
 }
 
 /* RESPONSIVE */

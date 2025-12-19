@@ -2,7 +2,7 @@
   --ivory:#F7F3EE;
   --ink:#0B0B0C;
   --muted: rgba(11,11,12,.55);
-  --container: 1180px;
+  --container: 1440px;
 }
 
 .pi{
@@ -35,9 +35,9 @@
 .pi__social{
   display: grid;
   place-items: center;
-  width: 30px;
-  height: 30px;
-  color: rgba(11,11,12,.35);
+  width: 40px;
+  height: 40px;
+  color: black;
   text-decoration: none;
   transition: color 220ms ease, transform 220ms ease;
 }
