@@ -23,41 +23,29 @@ export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log("Contact form:", form);
+
     setForm({ firstName: "", lastName: "", email: "", message: "" });
-    alert("Message sent! (demo)");
+    alert(t("contact_alert_sent"));
   };
 
   return (
     <main className="ct">
-      <section className="ct__container">
+      <section className="ct__container" aria-label={t("contact_aria")}>
         {/* LEFT IMAGE */}
         <div className="ct__photo">
-          <img src={contactImg} alt="Contact" />
+          <img src={contactImg} alt={t("contact_img_alt")} loading="lazy" />
         </div>
 
         {/* RIGHT FORM */}
         <div className="ct__content">
-          <h1 className="ct__title">
-            {t("contact_title", { defaultValue: "Get in touch" })}
-          </h1>
+          <h1 className="ct__title">{t("contact_title")}</h1>
 
-          <p className="ct__text">
-            {t("contact_text1", {
-              defaultValue:
-                "We’d love to hear from you. Tell us what DI-MURAD can tailor for you.",
-            })}
-          </p>
-
-          <p className="ct__text">
-            {t("contact_text2", {
-              defaultValue:
-                "For special orders, please send a message so we can tailor everything to your needs.",
-            })}
-          </p>
+          <p className="ct__text">{t("contact_text1")}</p>
+          <p className="ct__text">{t("contact_text2")}</p>
 
           <form className="ct__form" onSubmit={onSubmit}>
             <label className="ct__label">
-              {t("contact_name", { defaultValue: "Name" })} <span>*</span>
+              {t("contact_name")} <span>*</span>
             </label>
 
             <div className="ct__row">
@@ -66,7 +54,7 @@ export default function Contact() {
                 name="firstName"
                 value={form.firstName}
                 onChange={onChange}
-                placeholder={t("contact_first", { defaultValue: "First Name" })}
+                placeholder={t("contact_first")}
                 required
               />
               <input
@@ -74,52 +62,52 @@ export default function Contact() {
                 name="lastName"
                 value={form.lastName}
                 onChange={onChange}
-                placeholder={t("contact_last", { defaultValue: "Last Name" })}
+                placeholder={t("contact_last")}
                 required
               />
             </div>
 
             <label className="ct__label">
-              {t("contact_email", { defaultValue: "Email" })} <span>*</span>
+              {t("contact_email")} <span>*</span>
             </label>
+
             <input
               className="ct__input"
               type="email"
               name="email"
               value={form.email}
               onChange={onChange}
-              placeholder="example@email.com"
+              placeholder={t("contact_email_ph")}
               required
             />
 
             <label className="ct__label">
-              {t("contact_message", { defaultValue: "Message" })} <span>*</span>
+              {t("contact_message")} <span>*</span>
             </label>
+
             <textarea
               className="ct__textarea"
               name="message"
               value={form.message}
               onChange={onChange}
-              placeholder={t("contact_message_ph", {
-                defaultValue: "Write your message...",
-              })}
+              placeholder={t("contact_message_ph")}
               required
             />
 
             <button className="ct__btn" type="submit">
-              {t("contact_submit", { defaultValue: "Submit" })}
+              {t("contact_submit")}
             </button>
           </form>
 
           {/* SOCIALS */}
-          <div className="ct__socials">
+          <div className="ct__socials" aria-label={t("contact_socials_aria")}>
             <a
               className="ct__social"
               href="https://t.me/+998934550770"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Telegram"
-              title="Telegram"
+              aria-label={t("contact_social_telegram")}
+              title={t("contact_social_telegram")}
             >
               <FaTelegramPlane />
             </a>
@@ -129,8 +117,8 @@ export default function Contact() {
               href="https://www.instagram.com/di.murad"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
-              title="Instagram"
+              aria-label={t("contact_social_instagram")}
+              title={t("contact_social_instagram")}
             >
               <FaInstagram />
             </a>
@@ -139,7 +127,7 @@ export default function Contact() {
       </section>
 
       {/* MAP */}
-      <section className="ct__mapSection" aria-label="Map">
+      <section className="ct__mapSection" aria-label={t("contact_map_aria")}>
         <div className="ct__mapWrap">
           <iframe
             className="ct__map"
@@ -147,7 +135,7 @@ export default function Contact() {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
-            title="DI-MURAD location"
+            title={t("contact_map_title")}
           />
         </div>
       </section>

@@ -1,19 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../assets/style/Navbar.css";
 
 const Navbar = () => {
+  const { t, i18n } = useTranslation();
+
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [marketOpen, setMarketOpen] = useState(false);
   const navRef = useRef(null);
 
-  const closeAll = () => {
-    setMenuOpen(false);
-    setMarketOpen(false);
-  };
+  const closeAll = () => setMenuOpen(false);
 
-  // 70% scroll bo'lganda blur
+  // Scroll blur
   useEffect(() => {
     const onScroll = () => {
       const doc = document.documentElement;
@@ -28,12 +27,10 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Tashqariga bosilganda yopish
+  // Outside click + ESC
   useEffect(() => {
     const onClickOutside = (e) => {
-      if (navRef.current && !navRef.current.contains(e.target)) {
-        closeAll();
-      }
+      if (navRef.current && !navRef.current.contains(e.target)) closeAll();
     };
     const onEsc = (e) => {
       if (e.key === "Escape") closeAll();
@@ -46,28 +43,30 @@ const Navbar = () => {
     };
   }, []);
 
-  // Katta ekranga qaytganda mobil menyuni yopish
+  // Resize -> close mobile menu
   useEffect(() => {
     const onResize = () => {
-      if (window.innerWidth >= 1024) setMenuOpen(false);
+      if (window.innerWidth >= 1024) closeAll();
     };
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  // Mobil overlay ochilganda body scrollni bloklash
+  // Lock body scroll when overlay open
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => (document.body.style.overflow = "");
   }, [menuOpen]);
 
+  const linkClass = ({ isActive }) => `nav_a ${isActive ? "active" : ""}`;
+
   return (
     <nav ref={navRef} className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="container">
-        {/* Chap: nav */}
+        {/* LEFT */}
         <div className="nav_side-left">
           <button
-            aria-label="Open menu"
+            aria-label={t("nav_open", { defaultValue: "Open menu" })}
             className="nav_toggle"
             onClick={() => setMenuOpen(true)}
           >
@@ -77,9 +76,8 @@ const Navbar = () => {
           </button>
 
           <div className={`nav_links ${menuOpen ? "open" : ""}`}>
-            {/* Mobil/planshet overlay uchun yopish tugmasi */}
             <button
-              aria-label="Close menu"
+              aria-label={t("nav_close", { defaultValue: "Close menu" })}
               className="nav_close"
               onClick={closeAll}
             >
@@ -88,71 +86,59 @@ const Navbar = () => {
 
             <ul>
               <li>
-                <NavLink
-                  to="/"
-                  end
-                  className={({ isActive }) => `nav_a ${isActive ? "active" : ""}`}
-                  onClick={closeAll}
-                >
-                  Home
+                <NavLink to="/" end className={linkClass} onClick={closeAll}>
+                  {t("home", { defaultValue: "Home" })}
                 </NavLink>
               </li>
 
               <li>
-                <NavLink
-                  to="/products"
-                  className={({ isActive }) => `nav_a ${isActive ? "active" : ""}`}
-                  onClick={closeAll}
-                >
-                  Products
+                <NavLink to="/products" className={linkClass} onClick={closeAll}>
+                  {t("products", { defaultValue: "Products" })}
                 </NavLink>
               </li>
 
-                            <li>
+              <li>
                 <NavLink
                   to="/marketplaces"
-                  className={({ isActive }) => `nav_a ${isActive ? "active" : ""}`}
+                  className={linkClass}
                   onClick={closeAll}
                 >
-                  Marketplaces
-                </NavLink>
-              </li>
-
-
-              <li>
-                <NavLink
-                  to="/about"
-                  className={({ isActive }) => `nav_a ${isActive ? "active" : ""}`}
-                  onClick={closeAll}
-                >
-                  About
+                  {t("marketplaces", { defaultValue: "Marketplaces" })}
                 </NavLink>
               </li>
 
               <li>
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) => `nav_a ${isActive ? "active" : ""}`}
-                  onClick={closeAll}
-                >
-                  Contact
+                <NavLink to="/about" className={linkClass} onClick={closeAll}>
+                  {t("about", { defaultValue: "About" })}
+                </NavLink>
+              </li>
+
+              <li>
+                <NavLink to="/contact" className={linkClass} onClick={closeAll}>
+                  {t("contact", { defaultValue: "Contact" })}
                 </NavLink>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Markaz: logo */}
+        {/* CENTER LOGO */}
         <div className="logo_box">
-          <h1>DI-MURAD</h1>
+          <h1>{t("hero_brand", { defaultValue: "DI-MURAD" })}</h1>
         </div>
 
-        {/* O'ng: til tanlash */}
+        {/* RIGHT LANG */}
         <div className="lang_provider">
-          <select>
-            <option value="uz">O'zbek</option>
-            <option value="en">English</option>
-            <option value="ru">Русский</option>
+          <select
+            value={i18n.language}
+            onChange={(e) => i18n.changeLanguage(e.target.value)}
+            aria-label={t("nav_lang", { defaultValue: "Language" })}
+          >
+            <option value="uz">{t("lang_uz", { defaultValue: "O'zbek" })}</option>
+            <option value="en">{t("lang_en", { defaultValue: "English" })}</option>
+            <option value="ru">{t("lang_ru", { defaultValue: "Русский" })}</option>
+            <option value="fr">{t("lang_fr", { defaultValue: "Français" })}</option>
+            <option value="tr">{t("lang_tr", { defaultValue: "Türkçe" })}</option>
           </select>
         </div>
       </div>

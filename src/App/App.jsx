@@ -12,10 +12,18 @@ import About from "../pages/About";
 import Contact from "../pages/Contact";
 import Footer from "../components/layout/Footer.jsx";
 import translationsUz from "../locales/translationsUz.js"
+import translationsEn from "../locales/translationsEn.js";
+import translationsRu from "../locales/translationsRu.js";
+import translationsFr from "../locales/translationsFr.js";
+import translationsTr from "../locales/translationsTr.js";
 export default function App() {
   i18n.use(initReactI18next).init({
     resources: {
       uz: { translation: translationsUz },
+      en: { translation: translationsEn },
+      ru: { translation: translationsRu },
+      fr: { translation: translationsFr },
+      tr: { translation: translationsTr },
     },
     lng: "uz",
     fallbackLng: "uz",

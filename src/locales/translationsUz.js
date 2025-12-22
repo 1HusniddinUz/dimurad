@@ -8,10 +8,19 @@ const translationsUz = {
   marketplaces: "Marketpleyslar",
   about: "Biz haqimizda",
   contact: "Kontaktlar",
+  nav_open: "Menyuni ochish",
+  nav_close: "Menyuni yopish",
+  nav_lang: "Til",
+  lang_uz: "O'zbek",
+  lang_en: "English",
+  lang_ru: "Русский",
+  lang_fr: "Français",
+  lang_tr: "Türkçe",
 
   // =====================
   // HeroSection
   // =====================
+  hero_kicker: "DI-MURAD ATELYE",
   hero_brand: "DI-MURAD",
   hero_title_line1: "Abadiy siluetlar,",
   hero_title_line2: "zamonaviy tafsilotlar.",
@@ -19,38 +28,26 @@ const translationsUz = {
     "Ayollar milliy liboslari, kelin sarpolari va zamonaviy kiyimlari uchun nafis, minimal dizaynlar yaratamiz. Sifatli mato, toza shakl va sokin, vaqt sinovidan o‘tuvchi ranglar palitrasiga tayanamiz.",
   hero_cta_primary: "Kolleksiyani ko‘rish",
   hero_cta_secondary: "Biz bilan bog‘lanish",
+  hero_note: "Atelyeda yaratiladi • Haftasiga cheklangan qabul",
 
   // =====================
-  // ProcessSteps
+  // LookbookPeek
   // =====================
-  process_eyebrow: "Jarayon",
-  process_title: "Eskizdan yakuniy provalargacha",
-  process_step1_title: "Dastlabki suhbat",
-  process_step1_text:
-    "Mijoz istagi, marosim turi va byudjeti asosida yo‘nalishni belgilaymiz, moodboard va konsept bo‘yicha fikr almashamiz.",
-  process_step2_title: "O‘lchov va mato tanlash",
-  process_step2_text:
-    "Tana proporsiyasi, yurish uslubi va marosim joyini inobatga olgan holda mato, rang va siluetni tanlaymiz.",
-  process_step3_title: "Fitting va tuzatishlar",
-  process_step3_text:
-    "Birinchi prova va undan keyingi nozik tuzatishlar. Har bir chok, detal va uzunlik ideal tushishi sinchiklab tekshiriladi.",
-  process_step4_title: "Tayyor libos",
-  process_step4_text:
-    "Libos to‘liq tayyor bo‘lgach, so‘nggi fitting qilinadi. Kelin sarposi va aksessuarlar yaxlit ko‘rinishda topshiriladi.",
+  lookbook_title: "Lookbook",
+  lookbook_view_all: "Barchasini ko‘rish",
+  lookbook_alt_1: "Obraz 01",
+  lookbook_alt_2: "Obraz 02",
+  lookbook_alt_3: "Obraz 03",
+  lookbook_alt_4: "Obraz 04",
 
   // =====================
-  // TestimonialsStrip
+  // AppointmentCTA
   // =====================
-  testimonials_eyebrow: "Mijozlar hikoyalari",
-  testimonials_title: "Biz haqimizda kelinlar va mijozlar nimalar deyishadi",
-  testimonials_quote1_text:
-    "Libosim nafaqat chiroyli, balki juda qulay bo‘ldi. Har bir detal ustida sinchiklab ishlangani sezilib turardi.",
-  testimonials_quote1_author: "Z. A.",
-  testimonials_quote1_place: "Buxoro",
-  testimonials_quote2_text:
-    "Kelin sarposining har bir qismi bir-biriga juda mos tushdi, rang va naqshlar marosim kayfiyatiga juda chiroyli uyg‘unlashdi. O‘zini haqiqiy mutaxassis sifatida tutadigan jamoa.",
-  testimonials_quote2_author: "M. S.",
-  testimonials_quote2_place: "Toshkent",
+  appointment_aria: "Qabulga yozilish chaqirig‘i",
+  appointment_kicker: "PROVA FAQAT YOZILISH ORQALI",
+  appointment_title: "Sizning o‘lchovingiz. Sizning uslubingiz.",
+  appointment_sub: "Haftasiga cheklangan qabul.",
+  appointment_btn: "Hozir yozilish",
 
   // =====================
   // TimelineStrip
@@ -58,33 +55,6 @@ const translationsUz = {
   timeline_label: "2005 yildan beri",
   timeline_text:
     "2005 yildan buyon DASABA atelyesi ayollar milliy liboslari, kelin sarpolari va zamonaviy kapsula kolleksiyalarini yaratib keladi. Tajriba, qo‘l mehnati va zamonaviy kesimlar bitta tizimda uyg‘unlashtirilgan.",
-
-  // =====================
-  // TripleContent
-  // =====================
-  triple_eyebrow: "Dasaba atelyesi",
-  triple_title: "Ayollar uchun yaratilgan nafis tikuvchilik falsafasi",
-  triple_item1_title: "Atelier tikuvchilik",
-  triple_item1_text:
-    "Har bir libos alohida o‘lchov va andozalar asosida tikiladi. Siluet, matoning tushishi va detallar harakati tanadan tabiiy oqib tushishi uchun sinchiklab ishlaymiz.",
-  triple_item2_title: "Kelin sarpolari",
-  triple_item2_text:
-    "Kelinlik va kelin sarpolari uchun qo‘l kashtalari, nozik appliqué va milliy naqshlarni zamonaviy kesimlar bilan uyg‘unlashtirib, marosimga mos premium ko‘rinish yaratamiz.",
-  triple_item3_title: "Milliy va zamonaviy kapsula",
-  triple_item3_text:
-    "Cheklangan kapsula kolleksiyalar: tabiiy matolar, sokin palitra va amaliy shakllar. Kundalik hayotda ham bayramga yarasha kayfiyat beradigan liboslar yaratamiz.",
-
-  // =====================
-  // CapsulePreview
-  // =====================
-  capsule_eyebrow: "Joriy kapsula",
-  capsule_title: "Atelyemizdan saralangan obrazlar",
-  capsule_item1_title: "Bazmlar uchun ko‘ylak",
-  capsule_item1_note: "Cheklangan / buyurtma asosida",
-  capsule_item2_title: "City Look",
-  capsule_item2_note: "Yumshoq siluetlar, kundalik kiyimlar",
-  capsule_item3_title: "Evening Capsule",
-  capsule_item3_note: "Tantanali tadbirlar uchun obrazlar",
 
   // =====================
   // About page
@@ -101,26 +71,41 @@ const translationsUz = {
   about_p3:
     "Kompaniyaning asosiy maqsadi – o‘zbek milliy kiyim madaniyatini zamonaviy talqinda rivojlantirish, ayollar uchun nafaqat chiroyli, balki bardavom, qulay va yuksak estetik darajadagi liboslar yaratishdir. DI-MURAD o‘z hamkorlari va mijozlari bilan o‘zaro hurmat, ishonch va uzoq muddatli hamkorlik tamoyillariga tayanib faoliyat yuritadi.",
   about_brands_label: "Biz bilan hamkorlik qilgan brendlar…",
+  about_img_alt: "Atelye fotosurati",
 
   // =====================
-  // Contacts page
+  // Contact page (UZ)
   // =====================
-  contacts_title_line1: "Keling, birgalikda",
-  contacts_title_line2: "chiroyli narsa yarataylik",
-  contacts_form_name: "Ism",
-  contacts_form_email: "Email",
-  contacts_form_message: "Xabar",
-  contacts_form_required_mark: "*",
-  contacts_placeholder_first_name: "Ism",
-  contacts_placeholder_last_name: "Familiya",
-  contacts_placeholder_email: "siz@example.com",
-  contacts_placeholder_message: "Xabaringizni yozing...",
-  contacts_button_submit: "Yuborish",
-  contacts_social_label: "Bizni shuningdek bu yerda topishingiz mumkin",
-  contacts_email_label: "Email",
-  contacts_phone_label: "Telefon",
-  contacts_map_label: "Manzilimiz",
+  contact_aria: "Bog‘lanish bo‘limi",
+  contact_img_alt: "Bog‘lanish uchun rasm",
 
+  contact_title: "Bog‘lanish",
+  contact_text1:
+    "Sizdan xabar olishdan mamnun bo‘lamiz. DI-MURAD Siz uchun nimalar tikib bera olishini yozib qoldiring.",
+  contact_text2:
+    "Maxsus buyurtmalar uchun xabar qoldiring — hammasini didingiz va ehtiyojingizga moslab tayyorlaymiz.",
+
+  contact_name: "Ism",
+  contact_first: "Ism",
+  contact_last: "Familiya",
+
+  contact_email: "Email",
+  contact_email_ph: "siz@example.com",
+
+  contact_message: "Xabar",
+  contact_message_ph: "Xabaringizni yozing...",
+
+  contact_submit: "Yuborish",
+  contact_alert_sent: "Xabar yuborildi! (demo)",
+
+  contact_socials_aria: "Ijtimoiy tarmoqlar",
+  contact_social_telegram: "Telegram",
+  contact_social_instagram: "Instagram",
+
+  contact_map_aria: "Xarita",
+  contact_map_title: "DI-MURAD manzili",
+
+  
   // =====================
   // Marketplaces page
   // =====================
@@ -170,6 +155,25 @@ const translationsUz = {
   product_tag_handmade: "QO‘L ISHI",
   product_tag_city_capsule: "CITY CAPSULE",
   product_tag_evening: "EVENING",
+
+  products_search_aria: "Mahsulotlarni qidirish",
+
+  prod_chapan: "Chapan",
+  prod_cardigan_embro: "Kashtali sharfdan kardigan",
+  prod_cardigan_floral: "Gulli sharfdan kardigan",
+  prod_cardigan_red: "Qizil sharfdan kardigan",
+
+  prod_jacket_chapan: "Chapan-jaket",
+  prod_chapan_reversible: "Ikki tomonlama chapan",
+  prod_ethno_jacket: "Etno jaket",
+  prod_blue_chapan: "Ko‘k chapan",
+
+  prod_atlas_chapan: "Atlas chapan",
+  prod_bag: "Sumochka",
+  prod_ethno_jacket_emb: "Kashtali etno-jaket",
+  prod_rev_quilted_ethno: "Ikki tomonlama qavilgan etno-jaket",
+
+  prod_rev_bomber: "Ikki tomonlama bomber",
 
   // 6 ta sample item (minimal + elegant)
   products_item1_name: "Atlas Fusion Ko‘ylak",

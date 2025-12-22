@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "../assets/style/About.css";
 
-// O'zingizning rasm yo'lingiz bilan almashtiring
 import aboutImg from "../assets/images/qizil-opp.png";
 import PageIntro from "../components/ui/PageIntro";
 
@@ -10,45 +9,44 @@ const About = () => {
 
   return (
     <main className="aboutPage">
-      <section className="aboutWrap">
+      <section className="aboutWrap" aria-label={t("about_eyebrow", { defaultValue: "About" })}>
         {/* LEFT: IMAGE */}
         <div className="aboutPhoto">
-          <img src={aboutImg} alt={t("about_eyebrow", { defaultValue: "Atelier photo" })} />
+          <img
+            src={aboutImg}
+            alt={t("about_img_alt", { defaultValue: "Atelier photo" })}
+            loading="lazy"
+          />
         </div>
 
         {/* RIGHT: TEXT */}
         <div className="aboutContent">
+          <p className="aboutEyebrow">
+            {t("about_eyebrow", { defaultValue: "DI-MURAD haqida" })}
+          </p>
+
           <h1 className="aboutTitle">
-            {t("about_eyebrow", { defaultValue: "Hi there, I’m DI-MURAD!" })}
+            {t("about_title_line1", { defaultValue: "Professional jamoa," })}{" "}
+            <span className="aboutTitleBreak">
+              {t("about_title_line2", { defaultValue: "tafsiIotlarga e’tiborli." })}
+            </span>
           </h1>
 
+          <p className="aboutLead">
+            {t("about_title_line3", {
+              defaultValue: "Uzoq muddat xizmat qiladigan mahsulotlarga urg‘u beramiz.",
+            })}
+          </p>
+
           <div className="aboutText">
-            <p>
-              {t("about_p1", {
-                defaultValue:
-                  "We are a tailoring atelier focused on clean silhouettes, precise fit, and premium fabrics. Every piece is designed to feel effortless — and look intentional.",
-              })}
-            </p>
-
-            <p>
-              {t("about_p2", {
-                defaultValue:
-                  "Our approach is simple: measure carefully, cut thoughtfully, and finish with discipline. No loud details — just timeless elegance that stays relevant season after season.",
-              })}
-            </p>
-
-            <p>
-              {t("about_p3", {
-                defaultValue:
-                  "If you value minimal design and craftsmanship, book an appointment — we’ll tailor a piece that matches your lifestyle, not just your size.",
-              })}
-            </p>
+            <p>{t("about_p1")}</p>
+            <p>{t("about_p2")}</p>
+            <p>{t("about_p3")}</p>
           </div>
         </div>
       </section>
 
       <PageIntro />
-      
     </main>
   );
 };
