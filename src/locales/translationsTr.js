@@ -200,6 +200,7 @@ const translationsTr = {
   // =====================
   copy_line: "© 2025 Bukhara Entrepreneurs Business Club",
   copy_tagline: "İşinizi birlikte büyütelim",
+
 };
 
 export default translationsTr;

@@ -105,7 +105,6 @@ const translationsUz = {
   contact_map_aria: "Xarita",
   contact_map_title: "DI-MURAD manzili",
 
-  
   // =====================
   // Marketplaces page
   // =====================
@@ -208,6 +207,12 @@ const translationsUz = {
   // =====================
   copy_line: "© 2025 Bukhara Entrepreneurs Business Club",
   copy_tagline: "Biz bilan biznesingizni birgalikda rivojlantiring",
+
+  
+  contact_email_subject: "DI-MURAD sayt orqali yangi murojaat",
+  contact_mail_fullname: "Ism / familiya",
+  contact_mail_email: "Email",
+  contact_mail_message: "Xabar",
 };
 
 export default translationsUz;

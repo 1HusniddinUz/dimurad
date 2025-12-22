@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../../assets/style/Navbar.css";
-
+import logo from "../../assets/images/logo.png"
 const Navbar = () => {
   const { t, i18n } = useTranslation();
 
@@ -124,7 +124,7 @@ const Navbar = () => {
 
         {/* CENTER LOGO */}
         <div className="logo_box">
-          <h1>{t("hero_brand", { defaultValue: "DI-MURAD" })}</h1>
+          <img src={logo} alt="DI-MURAD Logo" />
         </div>
 
         {/* RIGHT LANG */}

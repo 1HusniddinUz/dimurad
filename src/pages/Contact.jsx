@@ -22,10 +22,32 @@ export default function Contact() {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log("Contact form:", form);
 
+    const fullName = [form.firstName, form.lastName].filter(Boolean).join(" ");
+
+    // email subject (translation bo‘lsa zo‘r, bo‘lmasa shu matn ishlaydi)
+    const subject =
+      t("contact_email_subject") || "DI-MURAD sayt orqali yangi murojaat";
+
+    const bodyLines = [
+      fullName && `${t("contact_mail_fullname") || "Ism / familiya"}: ${fullName}`,
+      `${t("contact_mail_email") || "Email"}: ${form.email}`,
+      "",
+      `${t("contact_mail_message") || "Xabar"}:`,
+      form.message,
+    ].filter(Boolean);
+
+    const body = bodyLines.join("\n");
+
+    const toEmail = "saidovadildora345@gmail.com"; // kerak bo‘lsa o‘zgartirasiz
+    const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.location.href = mailtoLink;
+
+    // UX: formni tozalab qo'yamiz
     setForm({ firstName: "", lastName: "", email: "", message: "" });
-    alert(t("contact_alert_sent"));
   };
 
   return (
@@ -63,7 +85,6 @@ export default function Contact() {
                 value={form.lastName}
                 onChange={onChange}
                 placeholder={t("contact_last")}
-                required
               />
             </div>
 
@@ -103,7 +124,7 @@ export default function Contact() {
           <div className="ct__socials" aria-label={t("contact_socials_aria")}>
             <a
               className="ct__social"
-              href="https://t.me/+998934550770"
+              href="https://t.me/DilnozaMurad"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("contact_social_telegram")}
