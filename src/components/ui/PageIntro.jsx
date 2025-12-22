@@ -22,7 +22,7 @@ export default function PageIntro({ title = "Social Links" }) {
 
             <a
               className="pi__social"
-              href="https://t.me/+998934550770"
+              href="https://t.me/DilnozaMurad"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
