@@ -134,7 +134,7 @@ export default function Contact() {
 
             <a
               className="ct__social"
-              href="https://www.instagram.com/di.murad"
+              href="https://www.instagram.com/di_murad_"
               target="_blank"
               rel="noopener noreferrer"
               aria-label={t("contact_social_instagram")}

@@ -25,7 +25,7 @@ export default function PageIntro({ titleKey = "pageintro_title" }) {
         >
           <a
             className="pi__social"
-            href="https://instagram.com/di.murad"
+            href="https://instagram.com/di_murad_"
             target="_blank"
             rel="noopener noreferrer"
             aria-label={t("pageintro_instagram")}
