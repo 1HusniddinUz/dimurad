@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../../assets/style/HeroSection.css";
 
-import heroImg from "../../assets/images/bg.png"; // premium editorial photo shart :)
+import heroImg from "../../assets/images/clothes/kok-chapan.png"; // premium editorial photo shart :)
 
 export default function HeroSection() {
   return (
