@@ -1,8 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import "../../assets/style/Navbar.css";
-import logo from "../../assets/images/logo.png"
+import logo from "../../assets/images/logo.png";
+
 const Navbar = () => {
   const { t, i18n } = useTranslation();
 
@@ -11,6 +15,21 @@ const Navbar = () => {
   const navRef = useRef(null);
 
   const closeAll = () => setMenuOpen(false);
+
+  // ✅ AOS init
+  useEffect(() => {
+    AOS.init({
+      duration: 650,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 10,
+    });
+  }, []);
+
+  // ✅ menu ochilib-yopilganda AOS qayta hisoblasin (mobile overlay uchun)
+  useEffect(() => {
+    AOS.refresh();
+  }, [menuOpen]);
 
   // Scroll blur
   useEffect(() => {
@@ -60,15 +79,29 @@ const Navbar = () => {
 
   const linkClass = ({ isActive }) => `nav_a ${isActive ? "active" : ""}`;
 
+  // ✅ AOS helper
+  const aos = (type, delay) => ({
+    "data-aos": type,
+    "data-aos-delay": String(delay),
+    "data-aos-duration": "650",
+    "data-aos-easing": "ease-out-cubic",
+    "data-aos-anchor-placement": "top-top",
+  });
+
   return (
-    <nav ref={navRef} className={`navbar ${scrolled ? "scrolled" : ""}`}>
+    <nav
+      ref={navRef}
+      className={`navbar ${scrolled ? "scrolled" : ""}`}
+      {...aos("fade-down", 0)}
+    >
       <div className="container">
         {/* LEFT */}
-        <div className="nav_side-left">
+        <div className="nav_side-left" {...aos("fade-right", 60)}>
           <button
-            aria-label={t("nav_open", { defaultValue: "Open menu" })}
+            aria-label={t("nav_open")}
             className="nav_toggle"
             onClick={() => setMenuOpen(true)}
+            {...aos("fade-right", 100)}
           >
             <span />
             <span />
@@ -77,45 +110,46 @@ const Navbar = () => {
 
           <div className={`nav_links ${menuOpen ? "open" : ""}`}>
             <button
-              aria-label={t("nav_close", { defaultValue: "Close menu" })}
+              aria-label={t("nav_close")}
               className="nav_close"
               onClick={closeAll}
+              {...aos("fade-in", 80)}
             >
               ×
             </button>
 
-            <ul>
-              <li>
+            <ul {...aos("fade-down", 120)}>
+              <li {...aos("fade-down", 140)}>
                 <NavLink to="/" end className={linkClass} onClick={closeAll}>
-                  {t("home", { defaultValue: "Home" })}
+                  {t("home")}
                 </NavLink>
               </li>
 
-              <li>
+              <li {...aos("fade-down", 200)}>
                 <NavLink to="/products" className={linkClass} onClick={closeAll}>
-                  {t("products", { defaultValue: "Products" })}
+                  {t("products")}
                 </NavLink>
               </li>
 
-              <li>
+              <li {...aos("fade-down", 260)}>
                 <NavLink
                   to="/marketplaces"
                   className={linkClass}
                   onClick={closeAll}
                 >
-                  {t("marketplaces", { defaultValue: "Marketplaces" })}
+                  {t("marketplaces")}
                 </NavLink>
               </li>
 
-              <li>
+              <li {...aos("fade-down", 320)}>
                 <NavLink to="/about" className={linkClass} onClick={closeAll}>
-                  {t("about", { defaultValue: "About" })}
+                  {t("about")}
                 </NavLink>
               </li>
 
-              <li>
+              <li {...aos("fade-down", 380)}>
                 <NavLink to="/contact" className={linkClass} onClick={closeAll}>
-                  {t("contact", { defaultValue: "Contact" })}
+                  {t("contact")}
                 </NavLink>
               </li>
             </ul>
@@ -123,22 +157,22 @@ const Navbar = () => {
         </div>
 
         {/* CENTER LOGO */}
-        <div className="logo_box">
+        <div className="logo_box" {...aos("zoom-in", 140)}>
           <img src={logo} alt="DI-MURAD Logo" />
         </div>
 
         {/* RIGHT LANG */}
-        <div className="lang_provider">
+        <div className="lang_provider" {...aos("fade-left", 200)}>
           <select
             value={i18n.language}
             onChange={(e) => i18n.changeLanguage(e.target.value)}
-            aria-label={t("nav_lang", { defaultValue: "Language" })}
+            aria-label={t("nav_lang")}
           >
-            <option value="uz">{t("lang_uz", { defaultValue: "O'zbek" })}</option>
-            <option value="en">{t("lang_en", { defaultValue: "English" })}</option>
-            <option value="ru">{t("lang_ru", { defaultValue: "Русский" })}</option>
-            <option value="fr">{t("lang_fr", { defaultValue: "Français" })}</option>
-            <option value="tr">{t("lang_tr", { defaultValue: "Türkçe" })}</option>
+            <option value="uz">{t("lang_uz")}</option>
+            <option value="en">{t("lang_en")}</option>
+            <option value="ru">{t("lang_ru")}</option>
+            <option value="fr">{t("lang_fr")}</option>
+            <option value="tr">{t("lang_tr")}</option>
           </select>
         </div>
       </div>

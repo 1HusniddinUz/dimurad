@@ -9,32 +9,37 @@ export default function AppointmentCTA() {
   const { t } = useTranslation();
 
   return (
-    <section
-      className="appCTA"
-      aria-label={t("appointment_aria", {
-        defaultValue: "Appointment call to action",
-      })}
-    >
+    <section className="appCTA" aria-label={t("appointment_aria")}>
       <div className="appCTA__container">
-        <div className="appCTA__media" aria-hidden="true">
+        <div
+          className="appCTA__media"
+          aria-hidden="true"
+          data-aos="zoom-in"
+          data-aos-delay="120"
+        >
           <img src={atelierImg} alt="" loading="lazy" />
         </div>
 
         <div className="appCTA__body">
-          <p className="appCTA__kicker">
-            {t("appointment_kicker", { defaultValue: "FITTING BY APPOINTMENT" })}
+          <p className="appCTA__kicker" data-aos="fade-up" data-aos-delay="160">
+            {t("appointment_kicker")}
           </p>
 
-          <h3 className="appCTA__title">
-            {t("appointment_title", { defaultValue: "Your fit. Your signature." })}
+          <h3 className="appCTA__title" data-aos="fade-up" data-aos-delay="220">
+            {t("appointment_title")}
           </h3>
 
-          <p className="appCTA__sub">
-            {t("appointment_sub", { defaultValue: "Limited weekly slots." })}
+          <p className="appCTA__sub" data-aos="fade-up" data-aos-delay="280">
+            {t("appointment_sub")}
           </p>
 
-          <Link className="appCTA__btn" to="/appointment">
-            {t("appointment_btn", { defaultValue: "Book now" })}
+          <Link
+            className="appCTA__btn"
+            to="/appointment"
+            data-aos="fade-up"
+            data-aos-delay="340"
+          >
+            {t("appointment_btn")}
           </Link>
         </div>
       </div>

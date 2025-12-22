@@ -25,29 +25,28 @@ export default function Contact() {
 
     const fullName = [form.firstName, form.lastName].filter(Boolean).join(" ");
 
-    // email subject (translation bo‘lsa zo‘r, bo‘lmasa shu matn ishlaydi)
-    const subject =
-      t("contact_email_subject") || "DI-MURAD sayt orqali yangi murojaat";
+    const subject = t("contact_email_subject"); // translationdan oladi
 
     const bodyLines = [
-      fullName && `${t("contact_mail_fullname") || "Ism / familiya"}: ${fullName}`,
-      `${t("contact_mail_email") || "Email"}: ${form.email}`,
+      fullName && `${t("contact_mail_fullname")}: ${fullName}`,
+      `${t("contact_mail_email")}: ${form.email}`,
       "",
-      `${t("contact_mail_message") || "Xabar"}:`,
+      `${t("contact_mail_message")}:`,
       form.message,
     ].filter(Boolean);
 
     const body = bodyLines.join("\n");
 
-    const toEmail = "muraddilnoza@gmail.com"; // kerak bo‘lsa o‘zgartirasiz
+    const toEmail = "muraddilnoza@gmail.com"; // shu yerda admin email
     const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
 
     window.location.href = mailtoLink;
 
-    // UX: formni tozalab qo'yamiz
+    // UX: tozalash
     setForm({ firstName: "", lastName: "", email: "", message: "" });
+    alert(t("contact_alert_sent"));
   };
 
   return (

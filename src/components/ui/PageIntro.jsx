@@ -1,35 +1,49 @@
 import "../../assets/style/PageIntro.css";
 import { CiInstagram } from "react-icons/ci";
 import { RiTelegram2Fill } from "react-icons/ri";
+import { useTranslation } from "react-i18next";
 
-export default function PageIntro({ title = "Social Links" }) {
+export default function PageIntro({ titleKey = "pageintro_title" }) {
+  const { t } = useTranslation();
+
   return (
-    <section className="pi" aria-label="Page intro">
+    <section className="pi" aria-label={t("pageintro_aria")}>
       <div className="pi__container">
-        <h1 className="pi__title">{title}</h1>
+        <h2
+          className="pi__title"
+          data-aos="fade-up"
+          data-aos-delay="120"
+        >
+          {t(titleKey)}
+        </h2>
 
-        <div className="pi__socials" aria-label="Social links">
-            <a
-              className="pi__social"
-              href="https://instagram.com/di.murad"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Facebook"
-              title="Facebook"
-            >
-              <CiInstagram />
-            </a>
+        <div
+          className="pi__socials"
+          aria-label={t("pageintro_socials_aria")}
+          data-aos="fade-up"
+          data-aos-delay="220"
+        >
+          <a
+            className="pi__social"
+            href="https://instagram.com/di.murad"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("pageintro_instagram")}
+            title={t("pageintro_instagram")}
+          >
+            <CiInstagram />
+          </a>
 
-            <a
-              className="pi__social"
-              href="https://t.me/DilnozaMurad"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              title="Instagram"
-            >
-              <RiTelegram2Fill />
-            </a>
+          <a
+            className="pi__social"
+            href="https://t.me/DilnozaMurad"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t("pageintro_telegram")}
+            title={t("pageintro_telegram")}
+          >
+            <RiTelegram2Fill />
+          </a>
         </div>
       </div>
     </section>
