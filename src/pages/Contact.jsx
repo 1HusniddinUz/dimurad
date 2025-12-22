@@ -39,7 +39,7 @@ export default function Contact() {
 
     const body = bodyLines.join("\n");
 
-    const toEmail = "saidovadildora345@gmail.com"; // kerak bo‘lsa o‘zgartirasiz
+    const toEmail = "muraddilnoza@gmail.com"; // kerak bo‘lsa o‘zgartirasiz
     const mailtoLink = `mailto:${toEmail}?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(body)}`;
