@@ -52,9 +52,9 @@ const translationsUz = {
   // =====================
   // TimelineStrip
   // =====================
-  timeline_label: "2005 yildan beri",
+  timeline_label: "2010 yildan beri",
   timeline_text:
-    "2005 yildan buyon DASABA atelyesi ayollar milliy liboslari, kelin sarpolari va zamonaviy kapsula kolleksiyalarini yaratib keladi. Tajriba, qo‘l mehnati va zamonaviy kesimlar bitta tizimda uyg‘unlashtirilgan.",
+    "2010 yildan buyon DASABA atelyesi ayollar milliy liboslari, kelin sarpolari va zamonaviy kapsula kolleksiyalarini yaratib keladi. Tajriba, qo‘l mehnati va zamonaviy kesimlar bitta tizimda uyg‘unlashtirilgan.",
 
   // =====================
   // About page
@@ -65,7 +65,7 @@ const translationsUz = {
   about_title_line3:
     "Uzoq muddat xizmat qiladigan mahsulotlarga urg‘u beramiz.",
   about_p1:
-    "DI-MURAD – ayollar milliy kiyimi va zamonaviy to‘qimachilik an’analarini uyg‘unlashtirgan dizayn uyi hisoblanadi. Kompaniyaga asos solinganidan buyon uning rahbari Saidova Dildora 2005 yildan beri ushbu sohada uzluksiz faoliyat yuritib, mahalliy va xalqaro mijozlarga milliy madaniy qadriyatlarimizga asoslangan xizmatlarni taqdim etib kelmoqda.",
+    "DI-MURAD – ayollar milliy kiyimi va zamonaviy to‘qimachilik an’analarini uyg‘unlashtirgan dizayn uyi hisoblanadi. Kompaniyaga asos solinganidan buyon uning rahbari Bakayeva Dilnoza 2010 yildan beri ushbu sohada uzluksiz faoliyat yuritib, mahalliy va xalqaro mijozlarga milliy madaniy qadriyatlarimizga asoslangan xizmatlarni taqdim etib kelmoqda.",
   about_p2:
     "DI-MURAD ayollar milliy liboslari, kelin sarpolari va zamonaviy kiyimlar yo‘nalishida individual buyurtmalar va kolleksiyalar asosida ish olib boradi. Har bir modelda yuqori sifatli mato, nafis did va milliy bezak unsurlari zamonaviy siluetlar bilan uyg‘unlashtirilib, mijozning shaxsiy uslubi va milliy o‘zligini namoyon etishga alohida e’tibor qaratiladi.",
   about_p3:

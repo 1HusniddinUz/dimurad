@@ -52,9 +52,9 @@ const translationsFr = {
   // =====================
   // TimelineStrip
   // =====================
-  timeline_label: "Depuis 2005",
+  timeline_label: "Depuis 2010",
   timeline_text:
-    "Depuis 2005, l’atelier DASABA crée des tenues traditionnelles féminines, des ensembles de mariage et des collections capsules modernes. Expérience, fait main et coupes contemporaines se réunissent dans un seul système.",
+    "Depuis 2010, l’atelier DASABA crée des tenues traditionnelles féminines, des ensembles de mariage et des collections capsules modernes. Expérience, fait main et coupes contemporaines se réunissent dans un seul système.",
 
   // =====================
   // About page
@@ -64,7 +64,7 @@ const translationsFr = {
   about_title_line2: "attentive aux détails.",
   about_title_line3: "Des pièces conçues pour durer.",
   about_p1:
-    "DI-MURAD est une maison de design qui associe la tenue traditionnelle féminine et les traditions textiles contemporaines. Depuis sa création, sa directrice Saidova Dildora travaille sans interruption dans le domaine depuis 2005, au service de clients locaux et internationaux avec un savoir-faire ancré dans la culture.",
+    "DI-MURAD est une maison de design qui associe la tenue traditionnelle féminine et les traditions textiles contemporaines. Depuis sa création, sa directrice Bakayeva Dilnoza travaille sans interruption dans le domaine depuis 2010, au service de clients locaux et internationaux avec un savoir-faire ancré dans la culture.",
   about_p2:
     "DI-MURAD réalise des pièces sur mesure et des collections : tenues traditionnelles, ensembles de mariage et vêtements modernes. Chaque modèle combine tissus premium, sens du détail et ornements nationaux avec des silhouettes actuelles, pour révéler le style personnel et l’identité.",
   about_p3:

@@ -52,9 +52,9 @@ const translationsEn = {
   // =====================
   // TimelineStrip
   // =====================
-  timeline_label: "Since 2005",
+  timeline_label: "Since 2010",
   timeline_text:
-    "Since 2005, DASABA atelier has been creating women’s nationalwear, bridal sets, and modern capsule collections. Experience, handcraft, and modern tailoring come together in one system.",
+    "Since 2010, DASABA atelier has been creating women’s nationalwear, bridal sets, and modern capsule collections. Experience, handcraft, and modern tailoring come together in one system.",
 
   // =====================
   // About page
@@ -64,7 +64,7 @@ const translationsEn = {
   about_title_line2: "detail-driven.",
   about_title_line3: "Built for long-lasting wear.",
   about_p1:
-    "DI-MURAD is a design house blending women’s nationalwear with contemporary textile traditions. Since the brand was founded, its director Saidova Dildora has been working continuously in the field since 2005, serving both local and international clients with culture-rooted craftsmanship.",
+    "DI-MURAD is a design house blending women’s nationalwear with contemporary textile traditions. Since the brand was founded, its director Bakayeva Dilnoza has been working continuously in the field since 2010, serving both local and international clients with culture-rooted craftsmanship.",
   about_p2:
     "DI-MURAD creates made-to-order pieces and collections across women’s nationalwear, bridal sets, and modern garments. Each design combines premium fabrics, refined taste, and national ornament details with modern silhouettes—highlighting personal style and identity.",
   about_p3:

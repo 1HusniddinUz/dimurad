@@ -52,9 +52,9 @@ const translationsTr = {
   // =====================
   // TimelineStrip
   // =====================
-  timeline_label: "2005’ten beri",
+  timeline_label: "2010’ten beri",
   timeline_text:
-    "2005’ten bu yana DASABA atölyesi kadın milli kıyafetleri, gelin setleri ve modern kapsül koleksiyonlar üretiyor. Deneyim, el işçiligi ve modern kalıplar tek bir sistemde birleşiyor.",
+    "2010’ten bu yana DASABA atölyesi kadın milli kıyafetleri, gelin setleri ve modern kapsül koleksiyonlar üretiyor. Deneyim, el işçiligi ve modern kalıplar tek bir sistemde birleşiyor.",
 
   // =====================
   // About page
@@ -64,7 +64,7 @@ const translationsTr = {
   about_title_line2: "detay odaklı.",
   about_title_line3: "Uzun ömürlü parçalar tasarlıyoruz.",
   about_p1:
-    "DI-MURAD, kadın milli giyimi ile çağdaş tekstil geleneklerini birleştiren bir tasarım evidir. Kuruluşundan bu yana, yönetici Saidova Dildora 2005’ten beri sektörde kesintisiz çalışarak yerel ve uluslararası müşterilere kültürel değerlerimize dayanan hizmetler sunmaktadır.",
+    "DI-MURAD, kadın milli giyimi ile çağdaş tekstil geleneklerini birleştiren bir tasarım evidir. Kuruluşundan bu yana, yönetici Bakayeva Dilnoza 2010’ten beri sektörde kesintisiz çalışarak yerel ve uluslararası müşterilere kültürel değerlerimize dayanan hizmetler sunmaktadır.",
   about_p2:
     "DI-MURAD; kadın milli kıyafetleri, gelin setleri ve modern giyim alanlarında özel sipariş ve koleksiyon bazlı çalışır. Her modelde premium kumaşlar, zarif zevk ve milli süsleme unsurları modern siluetlerle harmanlanır; müşterinin kişisel stilini ve kimliğini öne çıkarır.",
   about_p3:
