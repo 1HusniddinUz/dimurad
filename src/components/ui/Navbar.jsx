@@ -92,7 +92,6 @@ const Navbar = () => {
     <nav
       ref={navRef}
       className={`navbar ${scrolled ? "scrolled" : ""}`}
-      {...aos("fade-down", 0)}
     >
       <div className="container">
         {/* LEFT */}

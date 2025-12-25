@@ -3,7 +3,7 @@ import { CiInstagram } from "react-icons/ci";
 import { RiTelegram2Fill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 
-export default function PageIntro({ titleKey = "pageintro_title" }) {
+export default function PageIntro() {
   const { t } = useTranslation();
 
   return (

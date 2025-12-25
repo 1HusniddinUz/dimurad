@@ -4,9 +4,9 @@ import { useTranslation } from "react-i18next";
 import "../../assets/style/LookbookPeek.css";
 
 import img1 from "../../assets/images/atlas-opp.png";
-import img2 from "../../assets/images/chopon-opp.png";
-import img3 from "../../assets/images/qizil-opp.png";
-import img4 from "../../assets/images/qora-opp.png";
+import img2 from "../../assets/images/clothes/16.png";
+import img3 from "../../assets/images/clothes/17.png";
+import img4 from "../../assets/images/clothes/18.png";
 
 export default function LookbookPeek() {
   const { t } = useTranslation();

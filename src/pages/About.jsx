@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "../assets/style/About.css";
 
-import aboutImg from "../assets/images/qizil-opp.png";
+import aboutImg from "../assets/images/clothes/16.png";
 import PageIntro from "../components/ui/PageIntro";
 
 const About = () => {
