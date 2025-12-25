@@ -200,6 +200,9 @@ const translationsEn = {
   // =====================
   copy_line: "© 2025 Bukhara Entrepreneurs Business Club",
   copy_tagline: "Grow your business with us",
+
+
+  pageintro_aria: "Contact us via social media"
 };
 
 export default translationsEn;

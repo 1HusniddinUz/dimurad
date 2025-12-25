@@ -201,6 +201,9 @@ const translationsTr = {
   copy_line: "© 2025 Bukhara Entrepreneurs Business Club",
   copy_tagline: "İşinizi birlikte büyütelim",
 
+
+  pageintro_aria: "Sosyal medya üzerinden bizimle iletişime geçin"
+
 };
 
 export default translationsTr;

@@ -14,7 +14,7 @@ export default function PageIntro() {
           data-aos="fade-up"
           data-aos-delay="120"
         >
-          {t(titleKey)}
+          {t(`pageintro_aria`)}
         </h2>
 
         <div

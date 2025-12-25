@@ -213,6 +213,12 @@ const translationsUz = {
   contact_mail_fullname: "Ism / familiya",
   contact_mail_email: "Email",
   contact_mail_message: "Xabar",
+
+
+  // =====================
+  // PAGE INTRO (UI COMPONENT)
+  // =====================
+  pageintro_aria: "Ijtimoiy tarmoqlar orqali bog‘laning",
 };
 
 export default translationsUz;
